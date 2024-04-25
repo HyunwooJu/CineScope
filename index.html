@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>삼성라이온즈 우승</title>
+    <link rel="icon" href="https://i.namu.wiki/i/2aaR7lMDzjHY9SCIJXgSgeo8L742wE8FttOK8mAqJ1iuMVWKKl3SFFKVHIvMQDgmIUfvxvVc2YDrmbwTeUSz0g.svg">
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>CINE SCOPE</h1>
+    </header>
+    <div class="center">
+        <form class="search" onsubmit="handleSearch(event)">
+            <input type="text" id="search-input" placeholder="영화 제목을 검색해 보세요" />
+            <button type="submit" id="search-btn">검색</button>
+        </form>
+    </div>
+    <div class="center">
+        <div class="genre-buttons">
+            <button class="genre-btn" data-genre-id="28">액션</button>
+            <button class="genre-btn" data-genre-id="12">모험</button>
+            <button class="genre-btn" data-genre-id="35">코미디</button>
+            <!-- 필요한 만큼 장르 버튼을 추가할 수 있습니다 -->
+        </div>
+    </div>
+    <section class="card-list"></section>
+</body>
+
+</html>
