@@ -40,9 +40,14 @@ function displayMovies(movies) {
     const overview = document.createElement('p');
     overview.textContent = movie.overview;
 
+    // 평점 정보를 표시하는 요소 추가
+    const rating = document.createElement('p');
+    rating.textContent = `평점: ${movie.vote_average}`;
+
     card.appendChild(image);
     card.appendChild(title);
     card.appendChild(overview);
+    card.appendChild(rating); // 평점 요소 추가
 
     cardList.appendChild(card);
   });

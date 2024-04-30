@@ -114,6 +114,18 @@ header {
     font-size: 14px;
     color: #ccc;
     display: none;
+    overflow: auto; /* 영화 내용이 너무 길 때 스크롤바 표시 */
+    max-height: 100px; 
+}
+
+.card .rating {
+    /* 평점 스타일 */
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #FFC107;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 .card:hover p {
